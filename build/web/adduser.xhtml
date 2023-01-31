@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+       xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+   <style>
+           
+            
+            body{
+            background-image: url("ima/DE.jpg");
+            background-size: cover;
+          
+            }
+            .up{
+                color: white;
+            width: 500px;
+            background-color: rgba(0,0,0,0.2);
+          margin-left:300px;
+          margin-top: 60px;
+        }
+        .t {
+            background: #ccccff;
+ 
+  font-size: 20px;
+  padding: 30px 20px 10px 20px;
+  text-decoration: none;       
+        }
+        .t:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+        </style>
+    
+    <h:head>
+        <title>add party</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <div style=" padding-right: 500px;
+                padding-top:0px;">
+                <a href="AD.xhtml" role="button" class="t">BACK</a>
+                <a href="index.xhtml" role="button" class="t">EXIT</a>
+        <a href="table.xhtml" role="button" class="t">VIEW</a>
+        </div>
+            <div class="up">
+                                <div style=" text-align: center; ">
+
+           PARTY NAME:<br>
+               <h:inputText value="#{adp.firstName}" />
+            </br> 
+            
+         PARTY ID:<br>
+               <h:inputText value="#{adp.pid}" />  </br> 
+                 <h1><a href="AD.xhtml" style="color: #ffffff; text-decoration: none; background: #3498db; h">DELETE</a></h1>
+        </div>
+               
+             
+                
+               
+                
+                
+                
+                
+                
+                
+                 </div> 
+               
+        </h:form>
+    </h:body>
+</html>
+

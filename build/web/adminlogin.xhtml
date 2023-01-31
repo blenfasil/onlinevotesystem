@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    
+    <h:head>
+        <title> login</title>
+        <style>
+           
+            
+            body{
+            background-image: url("ima/QQ.jpg");
+            background-size: cover;
+                 
+        }
+           .buten {
+  background: #3498db;
+ 
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.buten:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+        .ty{
+            width: 500px;
+            background-color: rgba(0,0,0,0.2);
+            
+        }
+
+            .un{margin: 30px 0} 
+            .TO{ padding-top: 100px;
+            padding-left: 500px;
+            padding-right: 30px;
+            padding-bottom: 100px;
+            width: 500px;
+                height: 500px;
+            }
+            
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+    <div style=" padding-right: 200px;
+                padding-top:0px;">
+                <a href="index.xhtml" role="button" class="buten">HOME</a>
+                <a href="party.xhtml" role="button" class="buten">INFORMATION </a>
+        
+               
+        
+        </div>
+            <div class="TO">
+            <div class="ty">
+                <div style=" text-align: center; ">
+                
+                    <h:inputText value="#{newClass.username}" style="width:190px; height: 35px;  " class="un" a:placeholder=" NAME" title="Name" required="true" requiredMessage="name is required" ></h:inputText><br></br>
+            <h:inputSecret value="#{newClass.password}" class="un" a:placeholder="PASSWORD" title="password" style="width:190px; height: 35px;  "  required="true" requiredMessage="password  is required"></h:inputSecret><br></br>
+           
+    
+             
+            <h:commandButton action = "#{newClass.method1()}" value = "Log in"></h:commandButton>
+        
+                
+                 </div>
+                
+                </div>
+                </div>
+        </h:form>
+    </h:body>
+</html>
+

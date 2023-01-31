@@ -50,19 +50,19 @@
                                 <div style=" text-align: center; ">
 
             FIRST NAME:<br>
-               <h:inputText value="#{uuser.firstName}" />
+                <h:inputText value="#{uuser.firstName}" required="true" requiredMessage="first name is requred" />
             </br> 
             
          LAST NAME:<br>
-                <h:inputText value="#{uuser.lastName}" /> </br> 
+                <h:inputText value="#{uuser.lastName}" required="true" requiredMessage="last name is requred"/> </br> 
                 
                 YOUR Email:<br>
-              <h:inputText value="#{uuser.email}" /> </br> 
+              <h:inputText value="#{uuser.email}" required="true" requiredMessage="email is requred" /> </br> 
                 USER NAME:<br>
-               <h:inputText value="#{uuser.user}" />
+               <h:inputText value="#{uuser.user}" required="true" requiredMessage="user name is requred" />
             </br> 
                 PASSWORD:<br>
-                <h:inputText value="#{uuser.password}" />
+                    <h:inputText value="#{uuser.password}" required="true" requiredMessage="passsword is requrid" />
             </br> 
                 GENDER:
            <div class="ff">

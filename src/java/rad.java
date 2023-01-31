@@ -17,7 +17,7 @@ public class rad implements Serializable {
 
     private String party;
     
-    private List<String> partyList;
+   
 
     public String getParty() {
         return party;
@@ -34,7 +34,7 @@ public class rad implements Serializable {
     public void setpartyList(List<String> partyList) {
         this.partyList = partyList;
     }
-
+ List<String> partyList;
 
    
 
@@ -42,24 +42,24 @@ public class rad implements Serializable {
     public rad() {
         partyList = new ArrayList<>();
 
-         partyList.add("የመላው ኢትዮጵያ አንድነት ድርጅት All Ethiopian Unity Party");
-System.out.println();
-        partyList.add("የኢትዮጵያ ዴሞክራቲክ ኅብረት Ethiopian Democratic Union");
-        partyList.add("ኢትዮጵያ ብሔራዊ አንድነት ፓርቲ Ethiopian National Unity Party");
-        partyList.add("የኦሮሞ ፌዴራላዊ ኮንግረስ Oromo Federalist Congress");
-        partyList.add("የኦሮሞ ፌዴራላዊ ኮንግረስ Oromo Federalist Congress");
-        partyList.add("አዲስ ትውልድ ፓርቲ New Generation Party");
-        partyList.add("የኢትዮጵያ ሶሻል ዲሞክራቲክ ፓርቲ Ethiopian Social Democratic Party");
-        partyList.add("የአማራ ብሔራዊ ንቅናቄ National Movement of Amhara");
-        partyList.add("የኦሮሞ ነፃነት ንቅናቄ Oromo Liberation Movement");
-        partyList.add("የኦሮሞ ነፃነት ግንባር Oromo Liberation Front");
-        partyList.add("የኦጋዴን ብሔራዊ ነፃነት ግንባር Ogaden National Liberation Front");
-        partyList.add(" ነፃነትና እኩልነት ፓርቲ Freedom and Equality Party");
-        partyList.add("ኅብር ኢትዮጵያ ዴሞክራሲያዊ ፓርቲ Hibir Ethiopia Democratic Party");
-        partyList.add("ብልፅግና ፓርቲ Prosperity Party");
-        partyList.add("የኢትዮጵያ ዜጎች ለማኅበራዊ-ፍትህ ፓርቲ Ethiopian Citizens for Socialbr\n" +
-"Justice Party");
+         partyList.add("የመላው ኢትዮጵያ አንድነት ድርጅት ");
+
+        partyList.add("የኢትዮጵያ ዴሞክራቲክ ኅብረት ");
+        partyList.add("ኢትዮጵያ ብሔራዊ አንድነት ፓርቲ ");
+        partyList.add("የኦሮሞ ፌዴራላዊ ኮንግረስ ");
+        partyList.add("የኦሮሞ ፌዴራላዊ ኮንግረስ ");
+        partyList.add("አዲስ ትውልድ ፓርቲ ");
+        partyList.add("የኢትዮጵያ ሶሻል ዲሞክራቲክ ፓርቲ ");
+        partyList.add("የአማራ ብሔራዊ ንቅናቄ ");
+        partyList.add("የኦሮሞ ነፃነት ንቅናቄ ");
+        partyList.add("የኦሮሞ ነፃነት ግንባር ");
+        partyList.add("የኦጋዴን ብሔራዊ ነፃነት ግንባር ");
+        partyList.add(" ነፃነትና እኩልነት ፓርቲ ");
+        partyList.add("ኅብር ኢትዮጵያ ዴሞክራሲያዊ ፓርቲ ");
+        partyList.add("ብልፅግና ፓርቲ ");
+        
        
+      
     }
     public void Inert() throws SQLException {
       
@@ -68,7 +68,7 @@ System.out.println();
          
             DBConnection dbcon = new DBConnection();
             Connection con = dbcon.connMethod();
-            String sql = "Insert into USER2(partyNAME) values(?)";
+            String sql = "Insert into USER2(PARTYNAME) values(?)";
             PreparedStatement ps = con.prepareStatement(sql);
             String partyName = null;
             ps.setString(1, party);
